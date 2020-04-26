@@ -13,10 +13,11 @@ username = driver.find_element_by_name('session[username_or_email]')
 username.send_keys('imnirfn')
 time.sleep(1)
 password = driver.find_element_by_name('session[password]')
-password.send_keys('najihahcomel')
+password.send_keys('')
 time.sleep(1)
 password.send_keys(Keys.RETURN)
 time.sleep(5)
+
 #TWEET
 
 
