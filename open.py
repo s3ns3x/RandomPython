@@ -18,13 +18,27 @@ time.sleep(1)
 password.send_keys(Keys.RETURN)
 time.sleep(5)
 
+#SEARCH USERNAME
+search_username = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div[2]/input')
+search_username.send_keys('frssufyann')
+time.sleep(5)
+
+click_username = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[2]/div/div[3]/div[1]/li')
+click_username.click()
+
+button_el = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[1]/div/div[1]/div/div[1]')
+button_el.click()
+
+report_butt = driver.find_element_by_xpath('/html/body/div/div/div/div[1]/div[2]/div/div[2]/div[3]/div/div/div/div[4]')
+report_butt.click()
+
+click_final = driver.find_element_by_xpath('/html/body/div/div/div/div[1]/div[2]/div/div/div/div[2]/div[2]/div[3]/div[2]')
+click_final.click()
+
 #TWEET
 
 
-#driver.find_element_by_class_name('css-1dbjc4n r-urgr8i r-42olwf r-sdzlij r-1phboty r-rs99b7 r-1w2pmg r-vlx1xi r-zg41ew r-1jayybb r-17bavie r-icoktb r-15bsvpr r-o7ynqc r-6416eg r-lrvibr').click()
-#write stuffs
-twt = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div')
-twt.send_keys('Tweeting from python!')
 
-twtButton = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div[2]/div[3]')
-twtButton.click()
+
+
+
